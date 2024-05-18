@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alaa - Web Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <div class="container" id="home">
+        <header>
+            <a href="#" onclick="scrollToTop()">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+
+
+            <nav id="hamburger-nav">
+              <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="menu-links">
+                  <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                   <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                  <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+              </div>
+            </nav>
+        </header>
+        
+        <div class="name">
+              <h1>Hello, I'm <span></span></h1>
+            <img class="hover-image" src="images/hero-image.jpeg" alt="Hero Image">
+          
+        </div>
+        <div class="buttons">
+            <button class="hire-btn"><a href="#contact">Hire Me</a></button>
+            <button class="cv-btn"><a href="documents/my Resume.pdf" download>Download CV</a></button>
+
+        </div>
+    </div>
+    <!-- Header Section End -->
+
+
+
+<!-- About Section -->
+<div class="about" id="about">
+    <h1>What I Can Do.</h1>
+    <div class="about-content">
+        <img src="images/2150714097.jpg" alt="About Image 1" class="about-img-1">
+            <div class="about-info">
+                <h3>About Me</h3>
+                <p>
+                  I'm a web developer who loves building things from the scratch. Turning ideas into lively, creative websites is my happy place. It's the joy of making imagination tangible through code that keeps me hooked on web development.</p>
+                <div class="tab">
+                    <button class="tablinks" data-tab="tab1">Skills</button>
+                    <button class="tablinks" data-tab="tab2">Education</button>
+                    <button class="tablinks" data-tab="tab3">Certifications</button>
+                </div>
+        
+                <div id="tab1" class="tabcontent">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>three.js</li>
+                        <li>Tailwind</li>
+                        <Li>bootstrap</Li>
+                        <li>Git & github</li>
+                        <li>Figma</li>
+                        <li>Adobe XD</li>
+                    </ul>
+                </div>
+                <div id="tab2" class="tabcontent">
+                    <ul>
+                        <li>Front-end Developer</li>
+                        <li>UX/Ui Designer</li>
+                    </ul>
+                </div>
+                <div id="tab3" class="tabcontent">
+                    <ul>
+                        <li>Meta Front-End Developer Professional Certificate</li>
+                        <li>Google UX Design Professional Certificate</li>
+                        <li>Graphic Design Specialization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        
+    
+</div>
+
+    <!-- About Section End -->
+
+
+ <!-- Projects Section -->
+
+
+
+<div class="project" id="projects">
+  <h1>My Projects</h1>
+  
+  <!-- Project 1 -->
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="images/project5.png" alt="Project Image">
+      </div>
+      <div class="flip-card-back">
+        <h1>Clinic Website</h1>
+        <h2>Healthcare</h2>
+        <p>A streamlined website designed to enhance operational efficiencies and improve patient care services.</p>
+        <button onclick="window.open('https://clinic-2d8e2.web.app/', '_blank')">View Website</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 2 -->
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="images/project2.png" alt="Project Image">
+      </div>
+      <div class="flip-card-back">
+        <h1>VERDANTIQUE</h1>
+        <h2>E-commerce</h2>
+        <p>An elegant and efficient e-commerce platform providing a seamless shopping experience for users.</p>
+        <button onclick="window.open('https://verdantique-bf005.web.app/', '_blank')">View Website</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 3 -->
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="images/project3.png" alt="Project Image">
+      </div>
+      <div class="flip-card-back">
+        <h1>MERCEDES</h1>
+        <h2>Automotive</h2>
+        <p>A visually captivating interactive website showcasing Mercedes vehicles through immersive 3D experiences.</p>
+        <button onclick="window.open('https://mercedes-99.web.app/', '_blank')">View Website</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 4-->
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="images/project4.png" alt="Project Image">
+      </div>
+      <div class="flip-card-back">
+        <h1>AAA Studio</h1>
+        <h2>Creative Studio</h2>
+        <p>An engaging and dynamic presentation platform focusing on high-impact visual and interactive elements.</p>
+        <button onclick="window.open('https://aaa-999-9a.web.app/', '_blank')">View Website</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 5 -->
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="images/project.png" alt="Project Image">
+      </div>
+      <div class="flip-card-back">
+        <h1>STOCKIFY</h1>
+        <h2>SMARTSTOCK MANAGER</h2>
+        <p>An intelligent stock management system designed to streamline and optimize inventory processes.</p>
+        <button onclick="window.open('https://alaa-ezat.github.io/SMARTSTOCK-MANAGER/', '_blank')">View Website</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 6 -->
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="images/project1.png" alt="Project Image">
+      </div>
+      <div class="flip-card-back">
+        <h1>EATOPIA</h1>
+        <h2>Restaurant</h2>
+        <p>A user-friendly platform allowing customers to easily reserve a table at their favorite restaurant.</p>
+        <button onclick="window.open('https://eatopia-2b45c.web.app/', '_blank')">View Website</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    
+
+
+<!-- Contact Section -->
+<div class="contact" id="contact">
+  <div style="text-align:left;">
+    <h2>Let's Connect</h2>
+    <p>I'm currently looking for new opportunities, my inbox is <br>always open. Whether you have a question or just want to<br> say hi, I'll try my best to get back to you!</p>
+    <a href="https://www.linkedin.com/in/alaa-shalaby-19466526a/"  target="_blank" class="fa fa-linkedin"></a>
+    <a href="https://github.com/alaa-ezat" target="_blank" class="fa fa-github" ></a>
+  </div>
+  <div class="row">
+    <div class="column">
+      <form id="contactForm">
+        <label for="fname">Your email</label>
+        <input type="email" id="fname" name="user_email" placeholder="E-mail" required>
+        <label for="message">Message</label>
+        <input type="text" id="message" name="user_message" placeholder="Let's talk about....">
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="user_subject" placeholder="Just saying hi.." style="height:170px"></textarea>
+        <p id="success-message"></p>
+        <button type="button" onclick="sendEmail()">Send a message</button>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- Contact Section End -->
+
+
+    <!-- Footer Section -->
+    <div class="footer">
+      <a href="#" onclick="scrollToTop()">
+        <img src="images/logo.png" alt="Logo" style="width: 150px; height: 150px;">
+    </a>
+        <p>&copy; 2023 Coding by Alaa| All rights reserved.</p>
+    </div>
+    <!-- Footer Section End -->
+
+    <script src="main.js" defer></script>
+
+
+
+
+    <!-- email-js -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+
+
+
+
+</body>
+
+</html>
